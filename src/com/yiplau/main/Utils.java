@@ -1,4 +1,4 @@
-package cn.wjdiankong.main;
+package com.yiplau.main;
 
 import java.nio.ByteBuffer;
 import java.nio.CharBuffer;
@@ -34,7 +34,7 @@ public class Utils {
         byte[] b = new byte[2]; 
         for (int i = 0; i < b.length; i++) { 
             b[i] = new Integer(temp & 0xff).byteValue();// 
-            temp = temp >> 8; // 向右移8位 
+            temp = temp >> 8;
         } 
         return b; 
     } 

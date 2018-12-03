@@ -1,4 +1,4 @@
-package cn.wjdiankong.chunk;
+package com.yiplau.chunk;
 
 public class TagChunk {
 	

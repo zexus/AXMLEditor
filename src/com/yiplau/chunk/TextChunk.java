@@ -1,6 +1,6 @@
-package cn.wjdiankong.chunk;
+package com.yiplau.chunk;
 
-import cn.wjdiankong.main.Utils;
+import com.yiplau.main.Utils;
 
 public class TextChunk {
 	

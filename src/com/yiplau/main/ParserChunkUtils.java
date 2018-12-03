@@ -1,17 +1,17 @@
-package cn.wjdiankong.main;
+package com.yiplau.main;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import cn.wjdiankong.chunk.EndNameSpaceChunk;
-import cn.wjdiankong.chunk.EndTagChunk;
-import cn.wjdiankong.chunk.ResourceChunk;
-import cn.wjdiankong.chunk.StartNameSpaceChunk;
-import cn.wjdiankong.chunk.StartTagChunk;
-import cn.wjdiankong.chunk.StringChunk;
-import cn.wjdiankong.chunk.TagChunk;
-import cn.wjdiankong.chunk.TextChunk;
-import cn.wjdiankong.chunk.XmlStruct;
+import com.yiplau.chunk.EndNameSpaceChunk;
+import com.yiplau.chunk.EndTagChunk;
+import com.yiplau.chunk.ResourceChunk;
+import com.yiplau.chunk.StartNameSpaceChunk;
+import com.yiplau.chunk.StartTagChunk;
+import com.yiplau.chunk.StringChunk;
+import com.yiplau.chunk.TagChunk;
+import com.yiplau.chunk.TextChunk;
+import com.yiplau.chunk.XmlStruct;
 
 public class ParserChunkUtils {
 	

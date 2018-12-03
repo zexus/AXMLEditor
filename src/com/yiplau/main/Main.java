@@ -1,4 +1,4 @@
-package cn.wjdiankong.main;
+package com.yiplau.main;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
@@ -23,7 +23,7 @@ public class Main {
 		 */
 		
 		if(args.length < 3){
-			System.out.println("参数有误...");
+			System.out.println("Parameters Error...");
 			System.out.println(CMD_TXT);
 			return;
 		}
@@ -33,7 +33,7 @@ public class Main {
 		File inputFile = new File(inputfile);
 		File outputFile = new File(outputfile);
 		if(!inputFile.exists()){
-			System.out.println("输入文件不存在...");
+			System.out.println("Input File Not Exist...");
 			return;
 		}
 		

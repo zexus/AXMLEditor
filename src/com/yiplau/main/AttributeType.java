@@ -1,8 +1,8 @@
-package cn.wjdiankong.main;
+package com.yiplau.main;
 
 import java.util.HashMap;
 
-import cn.wjdiankong.chunk.AttributeData;
+import com.yiplau.chunk.AttributeData;
 
 /**
 attributes' types

@@ -1,19 +1,19 @@
-package cn.wjdiankong.chunk;
+package com.yiplau.chunk;
 
-import cn.wjdiankong.main.Utils;
+import com.yiplau.main.Utils;
 
-public class EndNameSpaceChunk {
-	
+public class StartNameSpaceChunk {
+
 	public byte[] type = new byte[4];
 	public byte[] size = new byte[4];
 	public byte[] lineNumber = new byte[4];
 	public byte[] unknown = new byte[4];
 	public byte[] prefix = new byte[4];
 	public byte[] uri = new byte[4];
-	
-	public static EndNameSpaceChunk createChunk(byte[] byteSrc){
 
-		EndNameSpaceChunk chunk = new EndNameSpaceChunk();
+	public static StartNameSpaceChunk createChunk(byte[] byteSrc){
+
+		StartNameSpaceChunk chunk = new StartNameSpaceChunk();
 
 		//½âÎötype
 		chunk.type = Utils.copyByte(byteSrc, 0, 4);

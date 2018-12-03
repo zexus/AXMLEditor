@@ -1,4 +1,4 @@
-package cn.wjdiankong.main;
+package com.yiplau.main;
 
 /**
  * 

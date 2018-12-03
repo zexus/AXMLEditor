@@ -1,4 +1,4 @@
-package cn.wjdiankong.main;
+package com.yiplau.main;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -7,11 +7,11 @@ import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
 import org.xmlpull.v1.XmlPullParserFactory;
 
-import cn.wjdiankong.chunk.AttributeData;
-import cn.wjdiankong.chunk.EndTagChunk;
-import cn.wjdiankong.chunk.StartTagChunk;
-import cn.wjdiankong.chunk.StringChunk;
-import cn.wjdiankong.chunk.TagChunk;
+import com.yiplau.chunk.AttributeData;
+import com.yiplau.chunk.EndTagChunk;
+import com.yiplau.chunk.StartTagChunk;
+import com.yiplau.chunk.StringChunk;
+import com.yiplau.chunk.TagChunk;
 
 public class XmlEditor {
 	
