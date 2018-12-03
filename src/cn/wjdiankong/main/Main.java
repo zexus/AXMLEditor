@@ -105,14 +105,14 @@ public class Main {
 	public static void doCommand(String[] args){
 		if("-tag".equals(args[0])){
 			if(args.length < 2){
-				System.out.println("缺少参数...");
+				System.out.println("Lack Of Parameters...");
 				System.out.println(CMD_TXT);
 				return;
 			}
 			//标签
 			if("-i".equals(args[1])){
 				if(args.length < 3){
-					System.out.println("缺少参数...");
+					System.out.println("Lack Of Parameters...");
 					System.out.println(CMD_TXT);
 					return;
 				}
@@ -120,15 +120,15 @@ public class Main {
 				String insertXml = args[2];
 				File file = new File(insertXml);
 				if(!file.exists()){
-					System.out.println("插入标签xml文件不存在...");
+					System.out.println("Insert XML Not Exists...");
 					return;
 				}
 				XmlEditor.addTag(insertXml);
-				System.out.println("插入标签完成...");
+				System.out.println("Insert Tag Completed...");
 				return;
 			}else if("-r".equals(args[1])){
 				if(args.length < 4){
-					System.out.println("缺少参数...");
+					System.out.println("Lack Of Parameters...");
 					System.out.println(CMD_TXT);
 					return;
 				}
@@ -136,23 +136,23 @@ public class Main {
 				String tag = args[2];
 				String tagName = args[3];
 				XmlEditor.removeTag(tag, tagName);
-				System.out.println("删除标签完成...");
+				System.out.println("Remove Tag Completed...");
 				return;
 			}else{
-				System.out.println("操作标签参数有误...");
+				System.out.println("Tag Parameters Error...");
 				System.out.println(CMD_TXT);
 				return;
 			}
 		}else if("-attr".equals(args[0])){
 			if(args.length < 2){
-				System.out.println("缺少参数...");
+				System.out.println("Lack Of Parameters...");
 				System.out.println(CMD_TXT);
 				return;
 			}
 			//属性
 			if("-i".equals(args[1])){
 				if(args.length < 6){
-					System.out.println("缺少参数...");
+					System.out.println("Lack Of Parameters...");
 					System.out.println(CMD_TXT);
 					return;
 				}
@@ -162,11 +162,11 @@ public class Main {
 				String attr = args[4];
 				String value = args[5];
 				XmlEditor.addAttr(tag, tagName, attr, value);
-				System.out.println("插入属性完成...");
+				System.out.println("Insert Attribute Completed...");
 				return;
 			}else if("-r".equals(args[1])){
 				if(args.length < 5){
-					System.out.println("缺少参数...");
+					System.out.println("Lack Of Parameters...");
 					System.out.println(CMD_TXT);
 					return;
 				}
@@ -175,11 +175,11 @@ public class Main {
 				String tagName = args[3];
 				String attr = args[4];
 				XmlEditor.removeAttr(tag, tagName, attr);
-				System.out.println("删除属性完成...");
+				System.out.println("Remove Attribute Completed...");
 				return;
 			}else if("-m".equals(args[1])){
 				if(args.length < 6){
-					System.out.println("缺少参数...");
+					System.out.println("Lack Of Parameters...");
 					System.out.println(CMD_TXT);
 					return;
 				}
@@ -189,9 +189,9 @@ public class Main {
 				String attr = args[4];
 				String value = args[5];
 				XmlEditor.modifyAttr(tag, tagName, attr, value);
-				System.out.println("修改属性完成...");
+				System.out.println("Modify Attribute Completed...");
 			}else{
-				System.out.println("操作属性参数有误...");
+				System.out.println("Attribute Parameters Error...");
 				System.out.println(CMD_TXT);
 				return;
 			}
