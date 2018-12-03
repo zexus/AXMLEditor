@@ -8,7 +8,7 @@ import java.io.IOException;
 
 public class Main {
 	
-	private final static String CMD_TXT = "[java -jar AXMLBuilder2.jar [-tag|-attr] [-i|-r|-m] [tag name|attr name] [tag unique ID|attr value] [input name] [output name]";
+	private final static String CMD_TXT = "[java -jar AXMLBuilder2.jar [-tag|-attr] [-i|-r|-m] [tag name|tag unique ID|attr name|attr value] [input name|output name]";
 
 	public static void main(String[] args){
 
